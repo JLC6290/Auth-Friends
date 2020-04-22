@@ -30,8 +30,8 @@ class Friends extends React.Component {
         return(
             <div className="friends-wrapper">
                     <h1>Friends: </h1>
-                {this.state.friends.map(friend => {
-                    return <div>
+                {this.state.friends.map((friend, i) => {
+                    return <div key={i}>
                             <h3>{friend.name}</h3>
                             <p>Age: {friend.age}</p>
                             <p>Email: {friend.email}</p>
